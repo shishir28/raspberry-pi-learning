@@ -6,9 +6,12 @@ buttonPin = 12    # we are defining button here
 
 
 def setup():
-    GPIO.setmode(GPIO.BOARD)      # using physical GPIO numbering
-    GPIO.setup(ledPin, GPIO.OUT)
+    GPIO.setmode(GPIO.BOARD)
+    # using physical GPIO numbering. it is used to set the serial number of GPIO which is based on physcial location of pin
+    # This is GPIO17 amd GPIO18 corresponds to pin 11 and 12
+    GPIO.setup(ledPin, GPIO.OUT)  # ledPin to Output mode
     # set buttonPin to PULL UP INPUT mode
+    # buttonPin to input moe with pull resistor
     GPIO.setup(buttonPin, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 
 

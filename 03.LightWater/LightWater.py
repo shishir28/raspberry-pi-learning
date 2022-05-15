@@ -7,7 +7,8 @@ ledPins = [11, 12, 13, 15, 16, 18, 22, 3, 5, 24]
 def setup():
     GPIO.setmode(GPIO.BOARD)
     GPIO.setup(ledPins, GPIO.OUT)  # All pins to output mode
-    GPIO.output(ledPins, GPIO.HIGH)  # All leds pins to ON
+    # All leds pins to HIGH level, turn off all LED
+    GPIO.output(ledPins, GPIO.HIGH)
 
 
 def loop():

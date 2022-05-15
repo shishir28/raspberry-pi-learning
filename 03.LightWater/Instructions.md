@@ -4,4 +4,4 @@
 4. Raspberry Pi (with 40 GPIO) x1 
 5. GPIO Extension Board & Wire x1
 6. Breadboard x1
-7. JUmper Wire x11
+7. Jumper Wire x11

@@ -18,6 +18,8 @@ def setup():
     p = GPIO.PWM(servoPin, 50)
     p.start(0)
 
+# map the angle to duty cycle  to output PWM then servo will rotate to specific angle
+
 
 def servoWrite(angle):
     if (angle < 0):

@@ -74,7 +74,6 @@ def loop():
             for j in range(0, 20):
                 x = 0x80
                 for i in range(k, k+8):
-                    print(i)
                     GPIO.output(latchPin, GPIO.LOW)
                     shiftOut(dataPin, clockPin, MSBFIRST, data[i])
                     shiftOut(dataPin, clockPin, MSBFIRST, ~x)
